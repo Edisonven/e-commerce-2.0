@@ -13,30 +13,38 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <h2 class="navbar__title">navbar</h2>
-      <div class="navbar__icons">
-        <a href=""
-          ><i
-            class="navbar__icon navbar__icon--lupa fa-solid fa-magnifying-glass"
-          ></i
-        ></a>
-        <a href=""><i class="navbar__icon fa-solid fa-circle-user"></i></a>
-        <a href=""><i class="navbar__icon fa-solid fa-gear"></i></a>
-      </div>
-      <div class="navbar__input">
-        <input
-          type="search"
-          class="navbar__placeholder"
-          placeholder="Buscar Producto"
-        />
-        <a href=""
-          ><i
-            class="navbar__icon navbar__icon--lupa2 fa-solid fa-magnifying-glass"
-          ></i
-        ></a>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="navbar">
+        <h2 class="navbar__title">navbar</h2>
+        <div class="navbar__icons">
+          <a href=""
+            ><i
+              class="navbar__icon navbar__icon--lupa fa-solid fa-magnifying-glass"
+            ></i
+          ></a>
+          <a href=""><i class="navbar__icon fa-solid fa-circle-user"></i></a>
+          <a href=""><i class="navbar__icon fa-solid fa-gear"></i></a>
+        </div>
+        <div class="navbar__icons-menu">
+          <label for="fa-bars"
+            ><i class="navbar__icon navbar__icon--bars fa-solid fa-bars"></i
+          ></label>
+          <input type="checkbox" id="fa-bars" class="navbar__input--menu" />
+        </div>
+        <div class="navbar__input">
+          <input
+            type="search"
+            class="navbar__placeholder"
+            placeholder="Buscar Producto"
+          />
+          <a href=""
+            ><i
+              class="navbar__icon navbar__icon--lupa2 fa-solid fa-magnifying-glass"
+            ></i
+          ></a>
+        </div>
+      </nav>
+    </div>
     <script
       src="https://kit.fontawesome.com/264cd09e8c.js"
       crossorigin="anonymous"

@@ -13,6 +13,10 @@ body {
     #e9e9e7 100%
   );
 }
+.container {
+  display: grid;
+  grid-template-areas: "navbar navbar";
+}
 .navbar {
   grid-area: navbar;
   display: flex;
