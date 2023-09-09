@@ -61,6 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .sidebar__menu {
   display: flex;
@@ -154,7 +155,7 @@ body {
     display: none;
   }
   .sidebar__menu {
-    display: none;
+    /* display: none; */
   }
   .sidebar__title {
     display: none;
@@ -169,5 +170,27 @@ body {
     grid-template-areas:
       "navbar"
       "main";
+  }
+  .sidebar__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    text-align: center;
+    gap: 3rem;
+    text-transform: uppercase;
+    margin-top: 4.4rem;
+    clip-path: circle(0% at center);
+    transition: clip-path linear 0.5s;
+    background-color: #1f0769;
+    width: 100%;
+    opacity: 95%;
+    padding-top: 2rem;
+  }
+  .sidebar__link {
+    color: white;
+  }
+  .sidebar__input--menu:checked + .sidebar__menu {
+    clip-path: circle(100% at center);
   }
 }
