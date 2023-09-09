@@ -29,6 +29,7 @@ body {
   opacity: 90%;
   padding: 1.3rem 2rem;
   box-shadow: -3px 7px 10px black;
+  position: relative;
 }
 .navbar__icons {
   display: flex;
@@ -151,11 +152,15 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+  }
+  .sidebar {
+    margin-top: 3rem;
+  }
   .navbar__input {
     display: none;
-  }
-  .sidebar__menu {
-    /* display: none; */
   }
   .sidebar__title {
     display: none;
