@@ -69,6 +69,10 @@ body {
   font-size: 1.1rem;
   padding: 1rem 0;
 }
+.sidebar__title {
+  padding: 3rem 0;
+  font-weight: 700;
+}
 @media (min-width: 600px) {
   .navbar {
     display: flex;
