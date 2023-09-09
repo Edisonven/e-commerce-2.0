@@ -33,6 +33,16 @@ body {
   gap: 1rem;
   padding-left: 6rem;
 }
+.navbar__input {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.navbar__placeholder {
+  display: block;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
 .navbar__title {
   display: flex;
   align-items: center;
