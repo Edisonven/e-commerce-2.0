@@ -54,6 +54,21 @@ body {
   color: white;
   font-size: 1.5rem;
 }
+.sidebar__menu {
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  flex-direction: column;
+  min-height: 100vh;
+  grid-area: sidebar;
+}
+.sidebar__link {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+}
 @media (min-width: 600px) {
   .navbar {
     display: flex;
@@ -61,6 +76,9 @@ body {
   }
   .navbar__icons-menu,
   .navbar__icons {
+    display: none;
+  }
+  .sidebar__input--menu {
     display: none;
   }
   .container {
@@ -71,7 +89,12 @@ body {
   .navbar__input {
     display: none;
   }
-
+  .sidebar__menu {
+    display: none;
+  }
+  .sidebar__title {
+    display: none;
+  }
   .sidebar__input--menu {
     display: none;
   }
