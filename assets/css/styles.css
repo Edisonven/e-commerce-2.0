@@ -163,7 +163,7 @@ body {
     display: none;
   }
   .navbar__icon--bars:active {
-    color: blue;
+    color: #1f0769;
   }
   .container {
     grid-template-areas:
