@@ -23,7 +23,7 @@ body {
   gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to right, #1a1919 0%, black 100%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   opacity: 90%;
   padding: 1.3rem 2rem;
 }
