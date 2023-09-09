@@ -37,6 +37,9 @@ body {
   gap: 1rem;
   padding-left: 6rem;
 }
+.navbar__icon--joystick {
+  font-size: 2rem;
+}
 .navbar__input {
   display: flex;
   gap: 1rem;
@@ -52,6 +55,7 @@ body {
   align-items: center;
   color: white;
   text-transform: uppercase;
+  gap: 1rem;
 }
 .navbar__icon {
   display: inline-block;
@@ -219,6 +223,16 @@ body {
   .navbar {
     position: fixed;
     width: 100%;
+    padding: 1rem 1.5rem;
+  }
+  .navbar__icons {
+    padding-left: 1rem;
+  }
+  .navbar__icon--joystick {
+    font-size: 1.3rem;
+  }
+  .navbar__title--h1 {
+    font-size: 1.3rem;
   }
   .sidebar {
     margin-top: 3rem;
