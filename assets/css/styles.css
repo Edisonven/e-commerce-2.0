@@ -54,6 +54,11 @@ body {
   color: white;
   font-size: 1.5rem;
 }
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .sidebar__menu {
   display: flex;
   align-items: flex-start;
