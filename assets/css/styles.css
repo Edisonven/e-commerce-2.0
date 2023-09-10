@@ -241,6 +241,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .footer__first-section-title {
   display: flex;
