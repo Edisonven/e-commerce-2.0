@@ -293,12 +293,11 @@ body {
     display: flex;
     flex-direction: row;
   }
-  
-  .navbar__icons-menu,
-  .navbar__icons {
+  .navbar__menu{
     display: none;
   }
-  .sidebar__input--menu {
+  .navbar__icons-menu,
+  .navbar__icons {
     display: none;
   }
   .navbar__input--menu {
@@ -318,9 +317,16 @@ body {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem;
+    --icon--bars: scale(1);
+    --icon--xmark: scale(0);
+  }
+  .navbar:has(.navbar__menu:target){
+   --icon--bars: scale(0);
+   --icon--xmark: scale(1); 
   }
   .navbar__icons {
     padding-left: 1rem;
+   
   }
   .navbar__icon--lupa2{
     display: none;
@@ -337,21 +343,34 @@ body {
   .navbar__placeholder {
     display: none;
   }
-  
+  .sidebar__menu{
+    display: none;
+  }
   .navbar__input--menu{
     display: none;
   }
   .sidebar__title {
     display: none;
   }
-  .sidebar__input--menu {
-    display: none;
-  }
-  .navbar__icon--bars:active {
-    color: #1f0769;
-  }
   .navbar__icon--lupa:active {
     opacity: 50%;
+  }
+  .navbar__icons-menu{
+    position: relative;
+    z-index: 10;
+   
+  }
+  .navbar__icon--xmark{
+    position: absolute;
+    top:-11px;
+    left:0;
+    transform: var(--icon--xmark);
+  }
+  .navbar__icon--bars{
+    position: absolute;
+    top:-11px;
+    left:0;
+    transform: var(--icon--bars);
   }
   .container {
     grid-template-areas:
@@ -360,7 +379,7 @@ body {
       "section"
       "footer";
   }
-  .sidebar__menu {
+  .navbar__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -371,10 +390,15 @@ body {
     margin-top: 3.5rem;
     clip-path: circle(0% at top right);
     transition: clip-path linear 0.5s;
-    background-color: #1f0769;
+    background-color: black;
     width: 100%;
-    opacity: 95%;
     padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+  }
+  .navbar__link{
+    text-decoration: none;
   }
   .navbar__placeholder--mobile {
     position: fixed;
@@ -387,14 +411,14 @@ body {
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: clip-path linear .3s;
   }
-  .sidebar__link {
+  .navbar__link {
     color: white;
   }
   .navbar__input--menu:checked + .navbar__placeholder--mobile{
    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
    
   }
-  .sidebar__menu:target{
+  .navbar__menu:target{
     clip-path: circle(100% at top right);
   }
   .footer__first--section {
