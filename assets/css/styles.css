@@ -285,11 +285,18 @@ body {
     display: flex;
     flex-direction: row;
   }
+  
   .navbar__icons-menu,
   .navbar__icons {
     display: none;
   }
   .sidebar__input--menu {
+    display: none;
+  }
+  .navbar__input--menu {
+     display: none; 
+  }
+  .navbar__placeholder--mobile{
     display: none;
   }
 }
@@ -307,6 +314,9 @@ body {
   .navbar__icons {
     padding-left: 1rem;
   }
+  .navbar__icon--lupa2{
+    display: none;
+  }
   .navbar__icon--joystick {
     font-size: 1.3rem;
   }
@@ -316,7 +326,11 @@ body {
   .sidebar {
     margin-top: 3rem;
   }
-  .navbar__input {
+  .navbar__placeholder {
+    display: none;
+  }
+  
+  .navbar__input--menu{
     display: none;
   }
   .sidebar__title {
@@ -327,6 +341,9 @@ body {
   }
   .navbar__icon--bars:active {
     color: #1f0769;
+  }
+  .navbar__icon--lupa:active {
+    color: #dbc200;
   }
   .container {
     grid-template-areas:
@@ -351,8 +368,23 @@ body {
     opacity: 95%;
     padding-top: 2rem;
   }
+  .navbar__placeholder--mobile {
+    position: fixed;
+    top: 62px;
+    right: 0;
+    display: block;
+    padding: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: scale(0);
+  }
   .sidebar__link {
     color: white;
+  }
+  .navbar__input--menu:checked + .navbar__placeholder--mobile{
+   background-color: #fff;
+   transform: scale(1);
+   transition: .3s;
   }
   .sidebar__input--menu:checked + .sidebar__menu {
     clip-path: circle(100% at center);

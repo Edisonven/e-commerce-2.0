@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mundo Gamer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
@@ -21,37 +18,18 @@
           <i class="navbar__icon--joystick fa-solid fa-gamepad"></i>
         </div>
         <div class="navbar__icons">
-          <a href=""
-            ><i
-              class="navbar__icon navbar__icon--lupa fa-solid fa-magnifying-glass"
-            ></i
-          ></a>
-          <a href=""
-            ><i
-              class="navbar__icon navbar__icon--user fa-solid fa-circle-user"
-            ></i
-          ></a>
-          <a href=""
-            ><i class="navbar__icon navbar__icon--gear fa-solid fa-gear"></i
-          ></a>
+          <label for="navbar__icon--lupa"><i class="navbar__icon navbar__icon--lupa fa-solid fa-magnifying-glass"></i></label>
+          <a href=""><i class="navbar__icon navbar__icon--user fa-solid fa-circle-user"></i></a>
+          <a href=""><i class="navbar__icon navbar__icon--gear fa-solid fa-gear"></i></a>
         </div>
         <div class="navbar__icons-menu">
-          <label for="fa-bars"
-            ><i class="navbar__icon navbar__icon--bars fa-solid fa-bars"></i
-          ></label>
+          <label for="fa-bars"><i class="navbar__icon navbar__icon--bars fa-solid fa-bars"></i></label>
         </div>
         <div class="navbar__input">
-          <input
-            type="search"
-            class="navbar__placeholder"
-            placeholder="Buscar Producto"
-          />
-
-          <a href=""
-            ><i
-              class="navbar__icon navbar__icon--lupa2 fa-solid fa-magnifying-glass"
-            ></i
-          ></a>
+          <input type="checkbox" id="navbar__icon--lupa" class="navbar__input--menu"/>
+          <input type="search" class="navbar__placeholder--mobile" placeholder="Buscar Producto"/>
+          <input type="search" class="navbar__placeholder" placeholder="Buscar Producto"/>
+          <a class="navbar__icon navbar__icon--lupa2" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </nav>
       <aside class="sidebar">
@@ -70,11 +48,7 @@
       <main class="main">
         <div class="main__cards">
           <div class="main__card">
-            <img
-              src="./assets/images/notebook.jpg"
-              class="main__card--img"
-              alt=""
-            />
+            <img src="./assets/images/notebook.jpg"class="main__card--img" alt=""/>
             <h2 class="main__card--title">Notebook Gamer</h2>
             <p class="main__card--descripción">
               Legion Pro 5i 8va Gen (16”, Intel) Optimizado por IA e inigualable
@@ -83,11 +57,7 @@
             <a class="main__card--link" href="">Comprar</a>
           </div>
           <div class="main__card">
-            <img
-              src="./assets/images/audifonos.jpeg"
-              class="main__card--img"
-              alt=""
-            />
+            <img src="./assets/images/audifonos.jpeg" class="main__card--img" alt=""/>
             <h2 class="main__card--title">Audifonos Gamer</h2>
             <p class="main__card--descripción">
               Audifono Headset Gamer Stereo Kotion Each G2000 Pc
@@ -96,11 +66,7 @@
             <a class="main__card--link" href="">Comprar</a>
           </div>
           <div class="main__card">
-            <img
-              src="./assets/images/monitor2.jpg"
-              class="main__card--img"
-              alt=""
-            />
+            <img src="./assets/images/monitor2.jpg" class="main__card--img" alt=""/>
             <h2 class="main__card--title">Monitor Gamer</h2>
             <p class="main__card--descripción">
               Monitor gamer curvo Kolke KES-461 led 23.6" blanco 100V/240V
@@ -109,11 +75,7 @@
             <a class="main__card--link" href="">Comprar</a>
           </div>
           <div class="main__card">
-            <img
-              src="./assets/images/celular.jpg"
-              class="main__card--img"
-              alt=""
-            />
+            <img src="./assets/images/celular.jpg" class="main__card--img" alt=""/>
             <h2 class="main__card--title">Teléfono Xiaomi</h2>
             <p class="main__card--descripción">
               Celular Smartphone Xiaomi Redmi Note 12 Pro 256GB
@@ -122,11 +84,7 @@
             <a class="main__card--link" href="">Comprar</a>
           </div>
           <div class="main__card">
-            <img
-              src="./assets/images/ps5.webp"
-              class="main__card--img"
-              alt=""
-            />
+            <img src="./assets/images/ps5.webp" class="main__card--img" alt=""/>
             <h2 class="main__card--title">Play Station 5</h2>
             <p class="main__card--descripción">
               Consola PS5 Marvel’s SpiderMan 2 Limited Edition
@@ -135,11 +93,7 @@
             <a class="main__card--link" href="">Comprar</a>
           </div>
           <div class="main__card">
-            <img
-              src="./assets/images/uncharted.jpg"
-              class="main__card--img"
-              alt=""
-            />
+            <img src="./assets/images/uncharted.jpg" class="main__card--img" alt=""/>
             <h2 class="main__card--title">Uncharted 4 (PC)</h2>
             <p class="main__card--descripción">
               UNCHARTED™: Colección Legado de ladrones
@@ -177,64 +131,37 @@
           <div class="footer__section">
             <h4 class="footer__section-title">Ayuda</h4>
             <ul class="footer__section-lista">
-              <a href="" class="footer__section-lista-link"
-                ><li>Centro de ayuda</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Formulario de contacto</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Reclamos</li></a
-              >
+              <a href="" class="footer__section-lista-link"><li>Centro de ayuda</li></a>
+              <a href="" class="footer__section-lista-link"><li>Formulario de contacto</li></a>
+              <a href="" class="footer__section-lista-link"><li>Reclamos</li></a>
             </ul>
           </div>
           <div class="footer__section">
             <h4 class="footer__section-title">Nosotros</h4>
             <ul class="footer__section-lista">
-              <a href="" class="footer__section-lista-link"
-                ><li>Quiénes somos</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Contacto</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Encuéntranos</li></a
-              >
+              <a href="" class="footer__section-lista-link"><li>Quiénes somos</li></a>
+              <a href="" class="footer__section-lista-link"><li>Contacto</li></a>
+              <a href="" class="footer__section-lista-link"><li>Encuéntranos</li></a>
             </ul>
           </div>
           <div class="footer__section">
             <h4 class="footer__section-title">Servicio al cliente</h4>
             <ul class="footer__section-lista">
-              <a href="" class="footer__section-lista-link"
-                ><li>Términos y condiciones</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Promociones</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Bases legales</li></a
-              >
-              <a href="" class="footer__section-lista-link"
-                ><li>Orden de servicio</li></a
-              >
+              <a href="" class="footer__section-lista-link"><li>Términos y condiciones</li></a>
+              <a href="" class="footer__section-lista-link"><li>Promociones</li></a>
+              <a href="" class="footer__section-lista-link"><li>Bases legales</li></a>
+              <a href="" class="footer__section-lista-link"><li>Orden de servicio</li></a>
             </ul>
           </div>
           <div class="section__social">
             <h4 class="section__social--title">Síguenos</h4>
-            <a class="section__social--icon" href=""
-              ><i class="fa-brands fa-square-facebook"></i></a
+            <a class="section__social--icon" href=""><i class="fa-brands fa-square-facebook"></i></a><a class="section__social--icon" href="" ><i class="fa-brands fa-instagram"></i></a
             ><a class="section__social--icon" href=""
-              ><i class="fa-brands fa-instagram"></i></a
-            ><a class="section__social--icon" href=""
-              ><i class="fa-brands fa-square-x-twitter"></i
-            ></a>
+              ><i class="fa-brands fa-square-x-twitter"></i ></a>
           </div>
         </div>
       </footer>
     </div>
-    <script
-      src="https://kit.fontawesome.com/264cd09e8c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/264cd09e8c.js"crossorigin="anonymous"></script>
   </body>
 </html>
