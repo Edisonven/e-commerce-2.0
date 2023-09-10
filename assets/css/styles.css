@@ -234,17 +234,16 @@ body {
 .footer__first--section {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
 }
 .footer__first-section-title {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 3rem;
 }
 .footer__section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
 }
 .footer__section-title {
   margin-left: 1rem;
@@ -287,6 +286,10 @@ body {
   .sidebar__input--menu {
     display: none;
   }
+}
+.footer__first--section {
+  display: flex;
+  flex-direction: row;
 }
 @media (max-width: 600px) {
   .navbar {
@@ -346,5 +349,9 @@ body {
   }
   .sidebar__input--menu:checked + .sidebar__menu {
     clip-path: circle(100% at center);
+  }
+  .footer__first--section {
+    display: flex;
+    flex-direction: column;
   }
 }
