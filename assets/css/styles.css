@@ -65,7 +65,10 @@ body {
   text-transform: uppercase;
   gap: 1rem;
 }
-
+.navbar__title--h1 {
+  border-bottom: solid 1px white;
+  width: max-content;
+}
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -90,6 +93,9 @@ body {
   font-weight: 700;
   font-size: 1.1rem;
   padding: 1rem 0;
+}
+.sidebar__link:hover{
+  opacity: 50%;
 }
 .sidebar__title {
   padding: 3rem 0;
@@ -345,7 +351,7 @@ body {
     color: #1f0769;
   }
   .navbar__icon--lupa:active {
-    color: #dbc200;
+    opacity: 50%;
   }
   .container {
     grid-template-areas:
@@ -363,7 +369,7 @@ body {
     gap: 3rem;
     text-transform: uppercase;
     margin-top: 3.5rem;
-    clip-path: circle(0% at center);
+    clip-path: circle(0% at top right);
     transition: clip-path linear 0.5s;
     background-color: #1f0769;
     width: 100%;
@@ -389,7 +395,7 @@ body {
    
   }
   .sidebar__input--menu:checked + .sidebar__menu {
-    clip-path: circle(100% at center);
+    clip-path: circle(100% at top right);
   }
   .footer__first--section {
     display: flex;
