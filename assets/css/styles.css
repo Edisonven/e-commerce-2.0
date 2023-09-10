@@ -17,7 +17,8 @@ body {
   display: grid;
   grid-template-areas:
     "navbar navbar navbar"
-    "sidebar main section";
+    "sidebar main section"
+    "footer footer footer";
 }
 .navbar {
   grid-area: navbar;
@@ -53,6 +54,7 @@ body {
 .navbar__title {
   display: flex;
   align-items: center;
+  text-align: center;
   color: white;
   text-transform: uppercase;
   gap: 1rem;
@@ -207,6 +209,54 @@ body {
 .section__card--link:hover {
   opacity: 50%;
 }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  grid-area: footer;
+  background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
+  color: white;
+  padding: 1.3rem 2rem;
+  box-shadow: -3px -3px 15px black;
+}
+.footer__title {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-bottom: solid 1px #efeeec;
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+}
+.footer__first--section {
+  display: flex;
+  flex-direction: column;
+}
+.footer__first-section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.footer__section--ayuda {
+  display: flex;
+  flex-direction: column;
+}
+.footer__section-ayuda-title {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: solid 1px white;
+  width: max-content;
+}
+.footer__section-ayuda-lista-link {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  list-style: none;
+}
 @media (min-width: 600px) {
   .navbar {
     display: flex;
@@ -254,7 +304,8 @@ body {
     grid-template-areas:
       "navbar"
       "main"
-      "section";
+      "section"
+      "footer";
   }
   .sidebar__menu {
     position: fixed;
