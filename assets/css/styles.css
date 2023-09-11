@@ -18,6 +18,7 @@ body {
     #e9e9e7 100%
   );
 }
+/*CONTENEDOR*/
 .container {
   display: grid;
   grid-template-areas:
@@ -25,6 +26,7 @@ body {
     "sidebar main section"
     "footer footer footer";
 }
+/*APARTADO NAVEGACIÓN*/
 .navbar {
   grid-area: navbar;
   display: flex;
@@ -74,6 +76,7 @@ body {
   border-bottom: solid 1px white;
   width: max-content;
 }
+/*APARTADO NAVEGACIÓN LATERAL */
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -89,7 +92,6 @@ body {
   display: flex;
   width: 200px;
   flex-direction: column;
-  min-height: 100vh;
   grid-area: sidebar;
 }
 .sidebar__link {
@@ -106,6 +108,7 @@ body {
   padding: 3rem 0;
   font-weight: 700;
 }
+/*APARTADO MAIN*/
 .main {
   grid-area: main;
 }
@@ -157,11 +160,12 @@ body {
   margin-bottom: 2rem;
 }
 .main__card--link:hover {
+  transition: .3s;
   background-color: white;
   color: #434343;
   font-weight: 700;
 }
-
+/*APARTADO SECCIÓN*/
 .section {
   grid-area: section;
 }
@@ -226,6 +230,7 @@ body {
 .section__card--link:hover {
   opacity: 50%;
 }
+/*APARTADO FOOTER*/
 .footer {
   display: flex;
   align-items: center;
@@ -298,17 +303,11 @@ body {
     display: flex;
     flex-direction: row;
   }
-  .navbar__menu{
-    display: none;
-  }
   .navbar__icons-menu,
-  .navbar__icons {
-    display: none;
-  }
-  .navbar__input--menu {
-     display: none; 
-  }
-  .navbar__placeholder--mobile{
+  .navbar__icons,
+  .navbar__input--menu, 
+  .navbar__placeholder--mobile,
+  .navbar__menu {
     display: none;
   }
 }
@@ -316,7 +315,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-
+/*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
   body{
     min-width: 400px;
@@ -338,25 +337,23 @@ body {
   .navbar__icon--lupa2{
     display: none;
   }
-  .navbar__icon--joystick {
-    font-size: 1.3rem;
+  .navbar__icon-gear-desktop,
+  .navbar__icon-user-desktop{
+    transform: scale(0);
   }
+  .navbar__icon--joystick,
   .navbar__title--h1 {
     font-size: 1.3rem;
   }
   .sidebar {
     margin-top: 3rem;
   }
-  .navbar__placeholder {
-    display: none;
-  }
-  .sidebar__menu{
-    display: none;
-  }
+  .navbar__placeholder,
   .navbar__input--menu{
     display: none;
   }
-  .sidebar__title {
+  .sidebar__menu,
+  .sidebar__title{
     display: none;
   }
   .navbar__icon--lupa:active {
