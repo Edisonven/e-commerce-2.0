@@ -1,3 +1,6 @@
+:root{
+  --box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -121,14 +124,14 @@ body {
   flex-basis: 320px;
   padding: 0.3rem;
   border-radius: 10px;
-  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+  box-shadow: var(--box-shadow);
 }
 .main__card--img {
   width: 100%;
   border-radius: inherit;
   height: 200px;
   object-fit: cover;
-  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+  box-shadow: var(--box-shadow);
 }
 .main__card--title {
   margin: 1rem 0;
@@ -179,7 +182,7 @@ body {
   width: 270px;
   padding: 0.3rem;
   border-radius: 10px;
-  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+  box-shadow: var(--box-shadow)
 }
 .section__img {
   width: 150px;
@@ -204,7 +207,7 @@ body {
   width: 270px;
   padding: 0.3rem;
   border-radius: 10px;
-  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
+  box-shadow:var(--box-shadow);
   margin-top: 3rem;
 }
 .section__card--link {
