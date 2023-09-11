@@ -362,7 +362,6 @@ body {
   .navbar__icons-menu{
     position: relative;
     z-index: 10;
-   
   }
   .navbar__icon--xmark{
     position: absolute;
@@ -383,7 +382,6 @@ body {
       "section"
       "footer";
   }
-  
   .navbar__menu {
     position: fixed;
     top: 0;
