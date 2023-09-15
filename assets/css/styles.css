@@ -78,9 +78,7 @@ body {
 }
 /*APARTADO NAVEGACIÓN LATERAL */
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  grid-area: sidebar;
   width: 100%;
 }
 .sidebar__content {
@@ -92,7 +90,7 @@ body {
   display: flex;
   width: 200px;
   flex-direction: column;
-  grid-area: sidebar;
+  
 }
 .sidebar__link {
   color: black;
