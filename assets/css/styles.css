@@ -378,6 +378,9 @@ body {
       "section"
       "footer";
   }
+  .main__cards{
+    margin-top: 5rem;
+  }
   .navbar__menu {
     position: fixed;
     top: 0;
