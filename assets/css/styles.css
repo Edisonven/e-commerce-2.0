@@ -90,7 +90,6 @@ body {
   display: flex;
   width: 200px;
   flex-direction: column;
-  
 }
 .sidebar__link {
   color: black;
@@ -251,27 +250,23 @@ body {
 .footer__icon {
   font-size: 1.5rem;
 }
-.footer__first--section {
+.footer__container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   width: 100%;
   justify-content: space-evenly;
 }
-.footer__first-section-title {
+.footer__logo {
   display: flex;
   align-items: center;
+  align-self: center;
   gap: 1rem;
+  width: max-content;
 }
 .footer__section {
   display: flex;
   flex-direction: column;
-}
-.footer__section-title {
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: solid 1px white;
-  width: max-content;
 }
 .footer__section-lista-link {
   color: white;
@@ -303,19 +298,17 @@ body {
   }
   .navbar__icons-menu,
   .navbar__icons,
-  .navbar__input--menu,
-  .navbar__placeholder--mobile,
   .navbar__menu {
     display: none;
   }
 }
-.footer__first--section {
+.footer__container {
   display: flex;
   flex-direction: row;
 }
 /*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
-  body {
+  .container {
     min-width: 400px;
   }
   .navbar {
@@ -352,9 +345,6 @@ body {
   .sidebar__title {
     display: none;
   }
-  .navbar__icon--lupa:active {
-    opacity: 50%;
-  }
   .navbar__icons-menu {
     position: relative;
     z-index: 10;
@@ -378,7 +368,7 @@ body {
       "section"
       "footer";
   }
-  .main__cards{
+  .main__cards {
     margin-top: 5rem;
   }
   .navbar__menu {
@@ -402,30 +392,18 @@ body {
   .navbar__link {
     text-decoration: none;
   }
-  .navbar__placeholder--mobile {
-    position: fixed;
-    top: 62px;
-    right: 0;
-    display: block;
-    padding: 0.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    transition: clip-path linear 0.3s;
-  }
   .navbar__link {
     color: white;
   }
-
   .navbar__menu:target {
     clip-path: circle(100% at top right);
   }
-  .footer__first--section {
+  .footer__container {
     display: flex;
     flex-direction: column;
   }
 }
-.footer__first-section-title {
+.footer__logo {
   justify-content: center;
 }
 .section__social {
