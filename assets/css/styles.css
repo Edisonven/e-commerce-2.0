@@ -128,25 +128,25 @@ body {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
 }
-.main__card--img {
+.main__card__img {
   width: 100%;
   border-radius: inherit;
   height: 200px;
   object-fit: cover;
   box-shadow: var(--box-shadow);
 }
-.main__card--title {
+.main__card__title {
   margin: 1rem 0;
 }
-.main__card--descripción {
+.main__card__descripción {
   border-top: 1px solid black;
   padding: 1.5rem 0;
 }
-.main__card--precio {
+.main__card__precio {
   padding-bottom: 2rem;
   font-size: 1.3rem;
 }
-.main__card--link {
+.main__card__link {
   display: block;
   color: white;
   text-decoration: none;
@@ -156,7 +156,7 @@ body {
   border-radius: 5px;
   margin-bottom: 2rem;
 }
-.main__card--link:hover {
+.main__card__link:hover {
   transition: 0.3s;
   background-color: white;
   color: #434343;
@@ -340,8 +340,7 @@ body {
   .sidebar {
     margin-top: 3rem;
   }
-  .navbar__placeholder,
-  .navbar__input--menu {
+  .navbar__placeholder {
     display: none;
   }
   .sidebar__menu,
