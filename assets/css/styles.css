@@ -268,25 +268,28 @@ body {
   display: flex;
   flex-direction: column;
 }
-.footer__section-lista-link {
+.footer__section__title {
+  padding-bottom: 10px;
+}
+.footer__section__link {
   color: white;
   text-decoration: none;
   line-height: 30px;
   list-style: none;
 }
-.footer__section-lista-link:hover {
+.footer__section__link:hover {
   text-decoration: underline;
 }
-.section__social {
+.footer__social {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
-.section__social--icon {
+.footer__social__icon {
   color: white;
   font-size: 1.5rem;
 }
-.section__social--icon:hover {
+.footer__social__icon:hover {
   transform: scale(1.3);
   transition: 0.4s;
   opacity: 50%;
