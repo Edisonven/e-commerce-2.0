@@ -43,7 +43,8 @@ body {
   position: relative;
 }
 .navbar__logo {
-  width: 160px;
+  width: 180px;
+  height: 47px;
 }
 .navbar__icons {
   display: flex;
@@ -275,6 +276,7 @@ body {
 .footer__logo {
   display: flex;
   width: 200px;
+  height: 55px;
   margin: 0 auto;
   align-items: center;
 }
