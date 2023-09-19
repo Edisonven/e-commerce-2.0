@@ -40,6 +40,9 @@ body {
   box-shadow: -3px 7px 10px black;
   position: relative;
 }
+.navbar__logo {
+  width: 160px;
+}
 .navbar__icons {
   display: flex;
   align-items: center;
@@ -259,7 +262,6 @@ body {
 .footer__section {
   display: flex;
   flex-direction: column;
- 
 }
 .footer__section__title {
   padding-bottom: 10px;
@@ -362,7 +364,7 @@ body {
       "section"
       "footer";
   }
-  .main__cards {
+  .main {
     margin-top: 5rem;
   }
   .navbar__menu {
@@ -373,7 +375,7 @@ body {
     text-align: center;
     gap: 3rem;
     text-transform: uppercase;
-    margin-top: 3.5rem;
+    margin-top: 5.2rem;
     clip-path: circle(0% at top right);
     transition: linear 0.5s;
     background-color: black;
