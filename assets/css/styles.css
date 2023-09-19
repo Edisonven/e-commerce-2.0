@@ -21,6 +21,7 @@ body {
 /*CONTENEDOR*/
 .container {
   display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     "navbar navbar navbar"
     "sidebar main section"
@@ -79,16 +80,15 @@ body {
 /*APARTADO NAVEGACIÓN LATERAL */
 .sidebar {
   grid-area: sidebar;
-  width: 100%;
+  min-width: 200px;
 }
 .sidebar__content {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 .sidebar__menu {
   display: flex;
-  width: 200px;
   flex-direction: column;
 }
 .sidebar__link {
@@ -126,6 +126,7 @@ body {
   padding: 0.3rem;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+  min-width: 300px;
 }
 .main__card__img {
   width: 100%;
@@ -227,15 +228,18 @@ body {
 }
 /*APARTADO FOOTER*/
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
   grid-area: footer;
+  color: #fff;
   background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
   color: white;
   padding: 1.3rem 2rem;
   box-shadow: -3px -3px 15px black;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+ place-items: center;
 }
 .footer__title {
   text-align: center;
@@ -247,13 +251,6 @@ body {
 
 .footer__icon {
   font-size: 1.5rem;
-}
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  width: 100%;
-  justify-content: space-evenly;
 }
 .footer__logo {
   display: flex;
@@ -304,10 +301,6 @@ body {
   .navbar__menu {
     display: none;
   }
-  .footer__container {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 /*RESPONSIVE DESIGN*/
@@ -344,8 +337,7 @@ body {
   .navbar__placeholder {
     display: none;
   }
-  .sidebar__menu,
-  .sidebar__title {
+  .sidebar {
     display: none;
   }
   .navbar__icons-menu {
@@ -365,6 +357,7 @@ body {
     transform: var(--icon--bars);
   }
   .container {
+    grid-template-columns: 1fr;
     grid-template-areas:
       "navbar"
       "main"
@@ -400,10 +393,6 @@ body {
   }
   .navbar__menu:target {
     clip-path: circle(100% at top right);
-  }
-  .footer__container {
-    display: flex;
-    flex-direction: column;
   }
   .footer__logo {
     justify-content: center;
