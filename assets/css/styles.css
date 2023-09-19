@@ -21,7 +21,7 @@ body {
 /*CONTENEDOR*/
 .container {
   display: grid;
-  grid-template-columns: 150px 4fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
   grid-template-areas:
     "navbar navbar navbar"
     "sidebar main section"
