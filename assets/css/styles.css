@@ -66,12 +66,12 @@ body {
   color: var(--primary-color);
   font-weight: 700;
   position: absolute;
-  left: -25px;
+  left: -20px;
   top: 100%;
   transform: scale(0);
   transition: 0.3s;
   background-color: #ffffff62;
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 10px;
 }
 .navbar__icon__user__desktop:hover::after {
@@ -80,6 +80,7 @@ body {
 .navbar__icon__user__desktop:hover {
   transform: scale(1.1) translateY(-5px);
 }
+
 .navbar__input {
   display: flex;
   gap: 1rem;
@@ -89,6 +90,7 @@ body {
   display: block;
   padding: 0.5rem;
   text-transform: uppercase;
+  margin-left: 40px;
 }
 .navbar__title__content {
   display: flex;
