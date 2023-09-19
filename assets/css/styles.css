@@ -100,7 +100,7 @@ body {
   padding: 1rem 0;
   position: relative;
   width: max-content;
-  
+  transition: 0.3s;
 }
 .sidebar__link::after {
   content: "";
@@ -119,6 +119,9 @@ body {
 }
 .sidebar__link:hover::after {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.sidebar__link:hover{
+  transform: scale(1.1);
 }
 .sidebar__title {
   padding: 3rem 0;
