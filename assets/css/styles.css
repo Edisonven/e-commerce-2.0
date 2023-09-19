@@ -231,7 +231,6 @@ body {
   grid-area: footer;
   color: #fff;
   background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
-  color: white;
   padding: 1.3rem 2rem;
   box-shadow: -3px -3px 15px black;
 }
