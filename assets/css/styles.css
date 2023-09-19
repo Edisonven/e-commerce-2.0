@@ -71,7 +71,7 @@ body {
   top: 100%;
   transform: scale(0);
   transition: 0.3s;
-  background-color: #ffffff62;
+  background-color: #fd1779;
   padding: 0 10px;
   border-radius: 10px;
 }
@@ -90,7 +90,7 @@ body {
   top: 100%;
   transform: scale(0);
   transition: 0.3s;
-  background-color: #ffffff62;
+  background-color: #fd1779;
   padding: 0 10px;
   border-radius: 10px;
 }
@@ -375,20 +375,21 @@ body {
 /*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
   .container {
-    min-width: 428px;
+    min-width: 400px;
   }
   .navbar {
     position: fixed;
     width: 100%;
-    padding: 1rem 1.5rem;
+    padding: 0rem 1rem;
     min-height: 70px;
+    gap: 0.1rem;
   }
   .navbar:has(.navbar__menu:target) {
     --icon--bars: scale(0);
     --icon--xmark: scale(1);
   }
   .navbar__icons {
-    padding-left: 1rem;
+    padding-left: 0;
     align-items: center;
   }
   .navbar__icon--lupa2 {
@@ -417,14 +418,14 @@ body {
   }
   .navbar__icon--xmark {
     position: absolute;
-    top: -13px;
-    left: 0;
+    top: -14px;
+    left: -15px;
     transform: var(--icon--xmark);
   }
   .navbar__icon--bars {
     position: absolute;
-    top: -13px;
-    left: 0;
+    top: -14px;
+    left: -15px;
     transform: var(--icon--bars);
   }
   .container {
@@ -446,7 +447,7 @@ body {
     text-align: center;
     gap: 3rem;
     text-transform: uppercase;
-    margin-top: 4.9rem;
+    margin-top: 4.2rem;
     clip-path: circle(0% at top right);
     transition: linear 0.5s;
     background-color: var(--secondary-color);
