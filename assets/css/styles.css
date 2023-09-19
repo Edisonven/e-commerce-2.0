@@ -57,6 +57,29 @@ body {
   color: var(--primary-color);
   font-size: 1.5rem;
 }
+.navbar__icon__user__desktop {
+  position: relative;
+  transition: linear 0.3s;
+}
+.navbar__icon__user__desktop::after {
+  content: "PERFIL";
+  color: var(--primary-color);
+  font-weight: 700;
+  position: absolute;
+  left: -25px;
+  top: 100%;
+  transform: scale(0);
+  transition: 0.3s;
+  background-color: #ffffff62;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+.navbar__icon__user__desktop:hover::after {
+  transform: scale(1);
+}
+.navbar__icon__user__desktop:hover {
+  transform: scale(1.1) translateY(-5px);
+}
 .navbar__input {
   display: flex;
   gap: 1rem;
@@ -121,7 +144,7 @@ body {
 .sidebar__link:hover::after {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-.sidebar__link:hover{
+.sidebar__link:hover {
   transform: scale(1.1);
 }
 .sidebar__title {
@@ -322,7 +345,7 @@ body {
   .navbar__menu {
     display: none;
   }
-  .navbar__input{
+  .navbar__input {
     align-items: center;
   }
 }
@@ -330,7 +353,7 @@ body {
 /*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
   .container {
-    min-width: 400px;
+    min-width: 428px;
   }
   .navbar {
     position: fixed;
@@ -349,9 +372,10 @@ body {
   .navbar__icon--lupa2 {
     display: none;
   }
-  .navbar__icon-gear-desktop,
-  .navbar__icon-user-desktop {
-    transform: scale(0);
+  .navbar__icon__user__desktop,
+  .navbar__icon__gear__desktop,
+  .navbar__icon__lupa2 {
+    display: none;
   }
   .navbar__title {
     font-size: 1.3rem;
