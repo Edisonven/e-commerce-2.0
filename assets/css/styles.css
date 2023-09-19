@@ -322,6 +322,9 @@ body {
   .navbar__menu {
     display: none;
   }
+  .navbar__input{
+    align-items: center;
+  }
 }
 
 /*RESPONSIVE DESIGN*/
@@ -341,6 +344,7 @@ body {
   }
   .navbar__icons {
     padding-left: 1rem;
+    align-items: center;
   }
   .navbar__icon--lupa2 {
     display: none;
@@ -367,13 +371,13 @@ body {
   }
   .navbar__icon--xmark {
     position: absolute;
-    top: -11px;
+    top: -13px;
     left: 0;
     transform: var(--icon--xmark);
   }
   .navbar__icon--bars {
     position: absolute;
-    top: -11px;
+    top: -13px;
     left: 0;
     transform: var(--icon--bars);
   }
