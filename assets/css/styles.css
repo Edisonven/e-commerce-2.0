@@ -36,7 +36,7 @@ body {
   align-items: center;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   opacity: 90%;
-  padding: 1.3rem 2rem;
+  padding: 0.5rem 2rem;
   box-shadow: -3px 7px 10px black;
   position: relative;
 }
@@ -54,10 +54,6 @@ body {
   color: white;
   font-size: 1.5rem;
 }
-.navbar__icon--joystick {
-  font-size: 2rem;
-}
-
 .navbar__input {
   display: flex;
   gap: 1rem;
@@ -254,10 +250,9 @@ body {
   font-size: 1.5rem;
 }
 .footer__logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  min-width: max-content;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
 }
 .footer__section {
   display: flex;
@@ -327,7 +322,6 @@ body {
   .navbar__icon-user-desktop {
     transform: scale(0);
   }
-  .navbar__icon--joystick,
   .navbar__title {
     font-size: 1.3rem;
   }
@@ -395,8 +389,7 @@ body {
     clip-path: circle(100% at top right);
   }
   .footer__logo {
-    justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .footer__social {
     justify-content: center;
