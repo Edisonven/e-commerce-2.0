@@ -331,6 +331,7 @@ body {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem;
+    min-height: 70px;
   }
   .navbar:has(.navbar__menu:target) {
     --icon--bars: scale(0);
@@ -393,7 +394,7 @@ body {
     text-align: center;
     gap: 3rem;
     text-transform: uppercase;
-    margin-top: 5.5rem;
+    margin-top: 4.9rem;
     clip-path: circle(0% at top right);
     transition: linear 0.5s;
     background-color: var(--secondary-color);
