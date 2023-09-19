@@ -64,10 +64,11 @@ body {
 }
 .navbar__icon__user__desktop::after {
   content: "PERFIL";
+  font-size: 0.8rem;
   color: var(--primary-color);
   font-weight: 700;
   position: absolute;
-  left: -20px;
+  left: -15px;
   top: 100%;
   transform: scale(0);
   transition: 0.3s;
@@ -83,10 +84,11 @@ body {
 }
 .navbar__icon__gear__desktop::after {
   content: "CONFIG";
+  font-size: 0.8rem;
   color: var(--primary-color);
   font-weight: 700;
   position: absolute;
-  left: -23px;
+  left: -18px;
   top: 100%;
   transform: scale(0);
   transition: 0.3s;
