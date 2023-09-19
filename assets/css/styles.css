@@ -2,6 +2,7 @@
   --box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.315);
   --icon--bars: scale(1);
   --icon--xmark: scale(0);
+  --primary-color: #fff
 }
 * {
   margin: 0;
@@ -51,7 +52,7 @@ body {
 }
 .navbar__icon {
   display: inline-block;
-  color: white;
+  color: var(--primary-color);
   font-size: 1.5rem;
 }
 .navbar__input {
@@ -68,12 +69,12 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color: var(--primary-color);
   text-transform: uppercase;
   gap: 1rem;
 }
 .navbar__title {
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px var(--primary-color);
   width: max-content;
 }
 /*APARTADO NAVEGACIÓN LATERAL */
@@ -147,7 +148,7 @@ body {
 }
 .main__card__link {
   display: block;
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 1.5rem;
   background-color: #434343;
@@ -157,7 +158,7 @@ body {
   transition: 0.3s;
 }
 .main__card__link:hover {
-  background-color: white;
+  background-color: var(--primary-color);
   color: #434343;
 }
 /*APARTADO SECCIÓN*/
@@ -191,7 +192,7 @@ body {
 }
 .section__card__title {
   margin: 1rem 0;
-  color: #fff;
+  color: var(--primary-color);
   padding: 0 1rem;
 }
 .section__card2 {
@@ -216,7 +217,7 @@ body {
   text-decoration: none;
   font-size: 1.3rem;
   color: #000000;
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding: 0.4rem 1.3rem;
   border-radius: 30px;
   margin-bottom: 1rem;
@@ -228,7 +229,7 @@ body {
 /*APARTADO FOOTER*/
 .footer {
   grid-area: footer;
-  color: #fff;
+  color: var(--primary-color);
   background-image: linear-gradient(to right, #111416 20%, #706e6b 100%);
   padding: 1.3rem 2rem;
   box-shadow: -3px -3px 15px black;
@@ -240,7 +241,7 @@ body {
 }
 .footer__title {
   text-align: center;
-  color: white;
+  color: var(--primary-color);
   text-transform: uppercase;
   font-size: 1.5rem;
   border-bottom: solid 1px #efeeec;
@@ -263,7 +264,7 @@ body {
   padding-bottom: 10px;
 }
 .footer__section__link {
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
   line-height: 30px;
   list-style: none;
@@ -277,7 +278,7 @@ body {
   gap: 2.5rem;
 }
 .footer__social__icon {
-  color: white;
+  color: var(--primary-color);
   font-size: 1.5rem;
   transition: 0.4s;
 }
@@ -384,7 +385,7 @@ body {
     text-decoration: none;
   }
   .navbar__link {
-    color: white;
+    color: var(--primary-color);
   }
   .navbar__menu:target {
     clip-path: circle(100% at top right);
