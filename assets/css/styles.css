@@ -115,7 +115,6 @@ body {
   margin: 3rem 0rem;
   justify-content: center;
   gap: 3rem;
-  max-width: 100%;
 }
 .main__card {
   display: flex;
@@ -190,7 +189,7 @@ body {
   width: 150px;
   margin-bottom: 1rem;
 }
-.section__card--title {
+.section__card__title {
   margin: 1rem 0;
   color: #fff;
   padding: 0 1rem;
@@ -212,7 +211,7 @@ body {
   box-shadow: var(--box-shadow);
   margin-top: 3rem;
 }
-.section__card--link {
+.section__card__link {
   display: block;
   text-decoration: none;
   font-size: 1.3rem;
@@ -223,7 +222,7 @@ body {
   margin-bottom: 1rem;
   font-weight: 700;
 }
-.section__card--link:hover {
+.section__card__link:hover {
   opacity: 50%;
 }
 /*APARTADO FOOTER*/
@@ -293,6 +292,8 @@ body {
   transform: scale(1.3);
   opacity: 50%;
 }
+
+/*DESKTOP DESIGN*/
 @media (min-width: 600px) {
   .navbar {
     display: flex;
@@ -303,11 +304,12 @@ body {
   .navbar__menu {
     display: none;
   }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+  }
 }
-.footer__container {
-  display: flex;
-  flex-direction: row;
-}
+
 /*RESPONSIVE DESIGN*/
 @media (max-width: 600px) {
   .container {
@@ -403,13 +405,14 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .footer__logo {
+    justify-content: center;
+  }
+  .section__social {
+    justify-content: center;
+  }
 }
-.footer__logo {
-  justify-content: center;
-}
-.section__social {
-  justify-content: center;
-}
+
 @media (max-width: 500px) {
   .navbar__title {
     font-size: 0.8rem;
