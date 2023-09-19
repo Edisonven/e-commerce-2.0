@@ -3,7 +3,7 @@
   --icon--bars: scale(1);
   --icon--xmark: scale(0);
   --primary-color: #fff;
-  --secondary-color:#000;
+  --secondary-color: #000;
 }
 * {
   margin: 0;
@@ -98,13 +98,27 @@ body {
   font-weight: 700;
   font-size: 1.1rem;
   padding: 1rem 0;
+  position: relative;
+  width: max-content;
+  
+}
+.sidebar__link::after {
+  content: "";
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: 0.3s;
 }
 .amount {
   color: #706e6b;
   font-weight: 400;
 }
-.sidebar__link:hover {
-  opacity: 50%;
+.sidebar__link:hover::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .sidebar__title {
   padding: 3rem 0;
