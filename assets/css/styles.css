@@ -37,6 +37,9 @@ body {
   box-shadow: -3px 7px 10px var(--secondary-color);
   position: relative;
 }
+.navbar__title {
+  font-size: 0.8rem;
+}
 .navbar__logo {
   width: 180px;
   height: 47px;
@@ -53,15 +56,15 @@ body {
   font-size: 1.5rem;
 }
 .navbar__icon__lupa2 {
-  transition: 0.2s;
+  transition: opacity linear 0.2s;
 }
 .navbar__icon__lupa2:hover {
-  transform: scale(1.3);
+  opacity: 50%;
 }
 .navbar__icon__user__desktop,
 .navbar__icon__gear__desktop {
   position: relative;
-  transition: linear 0.3s;
+  transition: transform linear 0.3s;
 }
 .navbar__icon__user__desktop::after {
   content: "PERFIL";
@@ -72,7 +75,7 @@ body {
   left: -15px;
   top: 100%;
   transform: scale(0);
-  transition: 0.3s;
+  transition: transform linear 0.3s;
   background-color: #fd1779;
   padding: 0 10px;
   border-radius: 10px;
@@ -92,7 +95,7 @@ body {
   left: -18px;
   top: 100%;
   transform: scale(0);
-  transition: 0.3s;
+  transition: transform linear 0.3s;
   background-color: #fd1779;
   padding: 0 10px;
   border-radius: 10px;
@@ -107,6 +110,13 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+.navbar__input__placeholder {
+  display: flex;
+  align-items: flex-end;
+  background-color: #fd1779;
+  border-radius: 10px;
+  border: 3px solid black;
 }
 .navbar__placeholder {
   display: block;
@@ -148,7 +158,7 @@ body {
   padding: 1rem 0;
   position: relative;
   width: max-content;
-  transition: 0.3s;
+  transition: transform linear 0.3s;
 }
 .sidebar__link::after {
   content: "";
@@ -159,7 +169,7 @@ body {
   width: 100%;
   height: 4px;
   clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  transition: 0.3s;
+  transition: clip-path linear 0.3s;
 }
 .amount {
   color: #706e6b;
@@ -225,7 +235,7 @@ body {
   padding: 0.4rem 2rem;
   border-radius: 5px;
   margin-bottom: 2rem;
-  transition: 0.3s;
+  transition: all linear 0.3s;
 }
 .main__card__link:hover {
   background-color: var(--primary-color);
@@ -326,10 +336,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.footer__logo__text{
+.footer__logo__text {
   text-align: center;
 }
-.footer__logo__parrafo{
+.footer__logo__parrafo {
   line-height: 25px;
 }
 .footer__logo__img {
@@ -363,7 +373,7 @@ body {
 .footer__social__icon {
   color: var(--primary-color);
   font-size: 1.5rem;
-  transition: 0.4s;
+  transition: all linear 0.4s;
 }
 .footer__social__icon:hover {
   transform: scale(1.3);
@@ -463,7 +473,7 @@ body {
     text-transform: uppercase;
     margin-top: 4.2rem;
     clip-path: circle(0% at top right);
-    transition: linear 0.5s;
+    transition: clip-path linear 0.5s;
     background-color: var(--secondary-color);
     width: 100%;
     padding-top: 2rem;
@@ -483,17 +493,11 @@ body {
   .footer__logo {
     margin-bottom: 20px;
   }
-  .footer__logo__img{
+  .footer__logo__img {
     margin-bottom: 20px;
   }
   .footer__social {
     justify-content: center;
     margin-top: 40px;
-  }
-}
-
-@media (max-width: 500px) {
-  .navbar__title {
-    font-size: 0.8rem;
   }
 }
